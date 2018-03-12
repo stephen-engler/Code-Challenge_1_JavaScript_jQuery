@@ -18,6 +18,8 @@ function makeDiv(){
   let divContent = $('<div></div>');
 
   divContent.append('<p>'+counter+'</p>');
+  divContent.append('<button class="swap">Swap</button>');
+  divContent.append('<button class="delete">Delete</button>');
 
   $('#content').append(divContent);
 
