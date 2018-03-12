@@ -11,6 +11,7 @@ function readyNow(){
 function addEventHandlers(){
   $('#generate').on('click', makeDiv);
   $('#content').on('click', '.delete', deleteDiv);
+  $('#content').on('click', '.swap', swapColor);
 }
 
 function makeDiv(){
@@ -27,4 +28,9 @@ function makeDiv(){
 
 function deleteDiv(){
   $(this).parent().remove();
+}
+
+function swapColor(){
+  console.log('in swapColor');
+  $(this).parent().toggleClass('yellow');
 }
