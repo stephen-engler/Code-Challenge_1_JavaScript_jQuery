@@ -10,6 +10,7 @@ function readyNow(){
 
 function addEventHandlers(){
   $('#generate').on('click', makeDiv);
+  $('#content').on('click', '.delete', deleteDiv);
 }
 
 function makeDiv(){
@@ -22,7 +23,8 @@ function makeDiv(){
   divContent.append('<button class="delete">Delete</button>');
 
   $('#content').append(divContent);
+}
 
-
-
+function deleteDiv(){
+  $(this).parent().remove();
 }
