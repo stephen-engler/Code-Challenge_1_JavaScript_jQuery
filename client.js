@@ -15,7 +15,7 @@ function addEventHandlers(){
 function makeDiv(){
   counter++;
   console.log('in make div');
-  let divContent = $('<div></div>');
+  let divContent = $('<div class="generatedDiv"></div>');
 
   divContent.append('<p>'+counter+'</p>');
   divContent.append('<button class="swap">Swap</button>');
